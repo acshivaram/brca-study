@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="13">
+            <Title>brcapaper2</Title>
+            <Text>-------------------------------------------------------------------------------
+      name:  &lt;unnamed&gt;
+       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
+&gt; per2.md
+  log type:  text
+ opened on:  15 Oct 2014, 19:49:16
+
+. 
+. tab programtype1
+
+ProgramType |
+          1 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          N |         11       42.31       42.31
+         NS |          8       30.77       73.08
+          O |          2        7.69       80.77
+          S |          5       19.23      100.00
+------------+-----------------------------------
+      Total |         26      100.00
+
+. 
+. log close
+      name:  &lt;unnamed&gt;
+       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
+&gt; per2.md
+  log type:  text
+ closed on:  15 Oct 2014, 19:49:16
+-------------------------------------------------------------------------------
+</Text>
+        </Document>
+        <Document ID="3">
+            <Title>First Section</Title>
+            <Text>Dear Arin
+ 
+John and I are interested in whether trends in HRT use and mammography screening might explain the different trends in breast cancer incidence between countries.  Thanks very much for your interest in working on this with us.
+ 
+We have limited data, but the attached papers and this website http://appliedresearch.cancer.gov/icsn/breast/screening.html  may be enough for an initial model?  
+ 
+I will send some other papers to you both in a separate email.
+ 
+Thanks again Arin.  We will look forward to meeting on 17 October.
+ 
+Best wishes,
+Ann
+
+Notes about the data in the website
+
+1 Program Types:
+N (National screening policy with national program implementation) 
+NS (National screening policy with state/provincial/regional screening program implementation)
+S (State/Provincial/Regional screening and program implementation)
+O (Other)
+2 Detection Methods:
+MM (screen-film mammography)
+DM (digital mammography)
+T (Tomosynthesis/3-D mammography)
+CBE (clinical breast exam)
+BSE (breast self-examination)
+MRI (Magnetic Resonance Imaging) 
+U (ultrasound)
+CT (Computerized Tomographic Imaging)
+3 Two of the 12 programs offer CBE or modified CBE in some facilities.
+4 One province does screen the 40-49 age group
+5 CBE only for those who request it or have suspicious symptoms
+6 Data come from the Breast Cancer Surveillance Consortium
+7 Represents estimate
+Incidence rates and deaths come from 
+http://appliedresearch.cancer.gov/icsn/breast/mortality.html
+
+Their source: Globocan
+
+Plus word documents used for HRT Use
+</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Tables</Title>
+            <Text>Table</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Tables</Title>
+            <Text>Table 1. Programme Type
+
+#                               
+
+
+Table 2. Detection Methods Used for Detection
+
+￼
+
+
+| Method Used | N | % |
+|  ---                  | --- | --- |
+
+</Text>
+        </Document>
+        <Document ID="4">
+            <Title>Introduction</Title>
+            <Text>The purpose of this paper is to test whether trends in HRT use and mammography screening might explain the different trends in breast cancer incidence between countries.  
+
+Thanks very much for your interest in working on this with us.
+ 
+may be enough for an initial model?  </Text>
+        </Document>
+        <Document ID="11">
+            <Title>References</Title>
+            <Text>
+BERMEJO, M. J. &amp; PEREZ, I. R. 2005. Physicians and the prescription of hormone replacement therapy in Spain. Health Policy, 73, 58-65.
+BILGRAMI, I., BLOWER, K., FENG, J., STEFANKO, G. &amp; TAN, E. 2004. Changes in the use of hormone replacement therapy in New Zealand following the publication of the Women’s Health Initiative trial. Journal of the New Zealand Medical Association, 117.
+BOUCHARDY, C., MORABIA, A., VERKOOIJEN, H. M., FIORETTA, G., WESPI, Y. &amp; SCHÄFER, P. 2006. Remarkable change in age-specific breast cancer incidence in the Swiss canton of Geneva and its possible relation with the use of hormone replacement therapy. BMC cancer, 6, 78.
+BROMLEY, S. E., DE VRIES, C. S. &amp; FARMER, R. D. 2004. Utilisation of hormone replacement therapy in the United Kingdom. A descriptive study using the general practice research database. BJOG, 111, 369-76.
+CROCETTI, E., BUZZONI, C., FALCINI, F., CORTESI, L., DE LISI, V., FERRETTI, S., TUMINO, R., RUSSO, A. &amp; PACI, E. 2010. Disentangling the roles of mammographic screening and HRT in recent breast cancer incidence trends in Italy by analyses based on calendar time and time since screening activation. The breast journal, 16, 350-355.
+DE, P., NEUTEL, C. I., OLIVOTTO, I. &amp; MORRISON, H. 2010. Breast cancer incidence and hormone replacement therapy in Canada. Journal of the National Cancer Institute, 102, 1489-1495.
+HERSH, A. L., STEFANICK, M. L. &amp; STAFFORD, R. S. 2004. National use of postmenopausal hormone therapy: annual trends and response to recent evidence. JAMA, 291, 47-53.
+HOLM, E., AALTONEN, K., HEIKKINEN, A.-M. &amp; TIIHONEN, M. 2014. From systemic hormone therapy to vaginal estrogen–a nationwide register study in Finland, 2003–2012. Maturitas.
+KIRKBY, R. &amp; SAIF, A. 2004. Screening, supplements and the use of hormonal replacement therapy in postmenopausal women in a family medicine department prior to the publication of the Woman's Health Initiative report. Annals of Saudi medicine, 24, 175-178.
+LAMBE, M., WIGERTZ, A., HOLMQVIST, M., ADOLFSSON, J., BARDAGE, C., FORNANDER, T., KARLSSON, P., ODLIND, V., PERSSON, I. &amp; AHLGREN, J. 2010. Reductions in use of hormone replacement therapy: effects on Swedish breast cancer incidence trends only seen after several years. Breast cancer research and treatment, 121, 679-683.
+LINOS, E., SPANOS, D., ROSNER, B. A., LINOS, K., HESKETH, T., QU, J. D., GAO, Y.-T., ZHENG, W. &amp; COLDITZ, G. A. 2008. Effects of reproductive and demographic changes on breast cancer incidence in China: a modeling analysis. Journal of the National Cancer Institute, 100, 1352-1360.
+LUCAS, R. &amp; BARROS, H. 2008. Life prevalence of hormone replacement therapy and profile of users have not changed among women with self-reported menopause in the last two decades in Porto, Portugal. Climacteric, 11, 26-31.
+MACLENNAN, A. H., TAYLOR, A. W. &amp; WILSON, D. 2004. Hormone therapy use after the women's health initiative. Climacteric, 7, 138-142.
+MAIN, P. &amp; ROBINSON, M. 2008. Changes in utilisation of hormone replacement therapy in Australia following publication of the findings of the Women's Health Initiative. Pharmacoepidemiology and drug safety, 17, 861-868.
+MANZOLI, L., DI GIOVANNI, P., DEL DUCA, L., DE ALOYSIO, D., FESTI, D., CAPODICASA, S., MONASTRA, G., ROMANO, F. &amp; STANISCIA, T. 2004. Use of hormone replacement therapy in Italian women aged 50-70 years. Maturitas, 49, 241-51.
+MEYER, H. E., LOFTHUS, C. M., SOGAARD, A. J. &amp; FALCH, J. A. 2009. Change in the use of hormone replacement therapy and the incidence of fracture in Oslo. Osteoporos Int, 20, 827-30.
+NAGATA, C., MATSUSHITA, Y. &amp; SHIMIZU, H. 1996. Prevalence of hormone replacement therapy and user's characteristics: a community survey in Japan. Maturitas, 25, 201-207.
+NEUTEL, C. I. &amp; MORRISON, H. 2010. Could recent decreases in breast cancer incidence really be due to lower HRT use? Trends in attributable risk for modifiable breast cancer risk factors in Canadian women. Can J Public Health, 101, 405-9.
+NORTH, F. &amp; SHARPLES, K. 2001. Changes in the use of hormone replacement therapy in New Zealand from 1991-1997. The New Zealand medical journal, 114, 250-253.
+PARKIN, D. M. 2009. Is the recent fall in incidence of post-menopausal breast cancer in UK related to changes in use of hormone replacement therapy? European Journal of Cancer, 45, 1649-53.
+POLLÁN, M., MICHELENA, M., ARDANAZ, E., IZQUIERDO, A., SÁNCHEZ-PÉREZ, M. &amp; TORRELLA, A. 2010. Breast cancer incidence in Spain before, during and after the implementation of screening programmes. Annals of oncology: official journal of the European Society for Medical Oncology/ESMO, 21, iii97-102.
+RACHON, D., ZDROJEWSKI, T., SUCHECKA-RACHON, K., SZPAKOWSKI, P., BANDOSZ, P., MANIKOWSKI, A. &amp; WYRZYKOWSKI, B. 2004. Knowledge and use of hormone replacement therapy among Polish women: estimates from a nationally representative study--HORTPOL 2002. Maturitas, 47, 31-7.
+SERADOUR, B., ALLEMAND, H., WEILL, A. &amp; RICORDEAU, P. 2009. Changes by age in breast cancer incidence, mammography screening and hormone therapy use in France from 2000 to 2006. Bull Cancer, 96, E1-6.
+SILVERMAN, B. G. &amp; KOKIA, E. S. 2009. Use of hormone replacement therapy, 1998-2007: sustained impact of the Women's Health Initiative findings. Annals of Pharmacotherapy, 43, 251-8.
+SOERJOMATARAM, I., COEBERGH, J. W., LOUWMAN, M. W., VISSER, O. &amp; VAN LEEUWEN, F. E. 2007. Does the decrease in hormone replacement therapy also affect breast cancer risk in the Netherlands? Journal of Clinical Oncology, 25, 5038-5039.
+SVEINSDÓTTIR, H. &amp; OLAFSSON, R. F. 2006. Women's attitudes to hormone replacement therapy in the aftermath of the Women's Health Initiative study. Journal of advanced nursing, 54, 572-584.
+VAN DUIJNHOVEN, F. J., VAN GILS, C. H., BEZEMER, I. D., PEETERS, P. H., VAN DER SCHOUW, Y. T. &amp; GROBBEE, D. E. 2006. Use of hormones in the menopausal transition period in the Netherlands between 1993 and 1997. Maturitas, 53, 462-475.
+VERKOOIJEN, H. M., KOOT, V., FIORETTA, G., VAN DER HEIDEN, M., SCHIPPER, M., RAPITI, E., PEETERS, P., PETERSE, J. &amp; BOUCHARDY, C. 2008. Hormone replacement therapy, mammography screening and changing age-specific incidence rates of breast cancer: an ecological study comparing two European populations. Breast cancer research and treatment, 107, 389-395.
+VON EULER-CHELPIN, M. 2011. Breast cancer incidence and use of hormone therapy in Denmark 1978–2007. Cancer Causes &amp; Control, 22, 181-187.
+ZBUK, K. &amp; ANAND, S. S. 2012. Declining incidence of breast cancer after decreased use of hormone-replacement therapy: magnitude and time lags in different countries. Journal of epidemiology and community health, 66, 1-7.</Text>
+        </Document>
+        <Document ID="14">
+            <Title>This is a very good font to work with the helvetica</Title>
+            <Text>This is a very good font to work with the helvetica neue. 
+
+Receipt: 609756897</Text>
+        </Document>
+        <Document ID="5">
+            <Title>Methods</Title>
+            <Text>We have limited data, but the attached papers and this website http://appliedresearch.cancer.gov/icsn/breast/screening.html  
+Data were scraped from this website. </Text>
+        </Document>
+        <Document ID="12">
+            <Title>brcapaper2</Title>
+            <Text>{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}&lt;unnamed&gt;
+       {txt}log:  {res}/Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapaper2.md
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}15 Oct 2014, 19:45:08
+{txt}
+{com}. 
+. tab programtype1
+
+{txt}ProgramType {c |}
+          1 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          N {c |}{res}         11       42.31       42.31
+         {txt}NS {c |}{res}          8       30.77       73.08
+          {txt}O {c |}{res}          2        7.69       80.77
+          {txt}S {c |}{res}          5       19.23      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         26      100.00
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}&lt;unnamed&gt;
+       {txt}log:  {res}/Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapaper2.md
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}15 Oct 2014, 19:45:08
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}&lt;unnamed&gt;
+       {txt}log:  {res}/Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapaper2.md
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}15 Oct 2014, 19:45:52
+{txt}
+{com}. 
+. tab programtype1
+
+{txt}ProgramType {c |}
+          1 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          N {c |}{res}         11       42.31       42.31
+         {txt}NS {c |}{res}          8       30.77       73.08
+          {txt}O {c |}{res}          2        7.69       80.77
+          {txt}S {c |}{res}          5       19.23      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         26      100.00
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}&lt;unnamed&gt;
+       {txt}log:  {res}/Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapaper2.md
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}15 Oct 2014, 19:45:52
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Trends in HRT use</Title>
+            <Text>Abstract of the Data Analysis
+I started with the following table, and constructed a spreadsheet with the following data and also data from existing incidence rates and deaths come from the following website
+http://appliedresearch.cancer.gov/icsn/breast/mortality.html for all countries mentioned in the table. The raw data is attached as well with this document. 
+Table 1. Trends in HRT use
+Country
+Population
+Age-range
+HRT use
+References
+Australia
+Population-based survey
+40 years and older
+Peaked in 2001 at 21% and Decreased to 12% by 2002
+Returned to 19% by 2003
+(Main and Robinson, 2008, MacLennan et al., 2004, Zbuk and Anand, 2012)
+Canada
+National Population Health Survey
+50-69
+Peaked at 30-45% in 2002
+Decreased to 15% by 2004 and 13.7% in 2006
+(Zbuk and Anand, 2012, De et al., 2010, Neutel and Morrison, 2010)
+China
+Shanghai Women’s Health Study cohort
+“after menopause”
+Estimated 3% in 1997-2000
+(Linos et al., 2008)
+Denmark
+Danish Medicines Agency
+Age range?
+Peaked at 11% in 2003
+Decreased to 9.7% in 2004 and to 9% in 2005
+(von Euler-Chelpin, 2011)
+Finland
+Nationwide register study
+45 years and older
+Peaked at 21% in 2003
+Decreased to 12% in 2012
+(Holm et al., 2014)
+France
+National reimbursement data
+50-64 years
+Peaked in 2001 at 32% Decreased to 11% by 2007
+(Zbuk and Anand, 2012, Seradour et al., 2009)
+Iceland
+Survey (n=561)
+47-53 years
+22% in 2004
+(Ref Icelandic study 57% of 52-57 year olds 1996-2001)
+(Sveinsdóttir and Olafsson, 2006)
+Israel
+HMO population
+45 years and older
+20% in 2001
+10% in 2007
+(Silverman and Kokia, 2009)
+Italy
+Milan prescriptions file
+50-69 years
+Estimated at 12% in 2003
+6.9% in 1999-2001
+(Manzoli et al., 2004, Crocetti et al., 2010)
+Japan
+Community survey (n=8791)
+45-64 years
+2.5% in 1992
+(Nagata et al., 1996)
+Korea
+
+Nil
+Luxembourg
+
+Nil
+Netherlands
+EPIC Cohort
+49-70 years
+Peaked at 13% 1993 - 1997
+Decreased to 11.4% in 2002-2003 and to 6.6% by 2005
+(Soerjomataram et al., 2007, van Duijnhoven et al., 2006)
+New Zealand
+Population-based survey
+45-64 years
+20% in 1997
+Decreased to 11% in 2002
+(Bilgrami et al., 2004, North and Sharples, 2001)
+Norway
+Oslo Health Study
+59-60 years
+46% of 59-60 year olds in 2000-2001 (Oslo)
+Decreased in Norway by 67% from 1999 to 2007
+(Meyer et al., 2009, Zbuk and Anand, 2012)
+Poland
+Representative national sample
+45-64 years
+12% in 2002 (before WHI Trial results)
+(Rachon et al., 2004)
+Portugal
+Cohort (n=382)
+“Postmenopausal”
+Lifetime prevalence of HRT use unchanged from 1985-2005
+(Lucas and Barros, 2008)
+Saudi Arabia
+Tertiary care hospital chart review
+56-59 years
+46% in 2000 (before WHI Trial results)
+(Kirkby and Saif, 2004)
+Spain
+Primary healthcare centre population
+45-65 years
+11% in 1998
+8.6% in 2002
+(Pollán et al., 2010, Zbuk and Anand, 2012, Bermejo and Perez, 2005)
+Sweden
+National pharmacy data
+50-59 years
+Peaked at 36% in 1999
+Declined to 27% in 2002 and 9% in 2007
+(Lambe et al., 2010)
+Switzerland
+Cohort study
+45-49 years
+35-50% in 1996
+46% in 2002
+(Verkooijen et al., 2008, Bouchardy et al., 2006)
+United Kingdom
+Million Women Study
+45-69 years
+27.7% in 1998
+25% in 2000-2001
+12% in 2006
+(Bromley et al., 2004, Parkin, 2009)
+United States
+National prescription and therapeutic index databases
+50-74 years
+Peaked at 42% in 2001
+Declined to 28% in 2003
+(Hersh et al., 2004)
+Uruguay
+
+Nil
+
+
+
+
+
+Results of the Data Analysis
+
+
+
+
+
+
+</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>
