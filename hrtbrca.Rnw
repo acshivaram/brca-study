@@ -1,0 +1,160 @@
+\documentclass{article}
+
+\title{Association between reduction in HRT usage and decrease in Breast Cancer Incidence}
+
+\begin{document}
+
+\maketitle
+
+\section*{Summary/Abstract}
+
+The purpose of this paper is to investigate the phenomemon of decrease in Breat Cancer incidence with reduction in the usage of Hormone Replacement Therapy among women 50 years old or older in developed countreis. The results were adjusted for the age at initiation of Breast Cancer screening, and the usage of the hormone replacement therapy in the respective countries.
+
+This was a secondary data analysis. 
+
+<<Setwd, echo = FALSE >>=
+## Here is the working directory
+
+Mywd <- setwd("/Users/arindambose/GitHub/brca-study")
+
+## Read the data into R
+
+mydata <- read.csv("breastca.csv", header = TRUE, sep = ",")
+mydata$hrtuse2 <- (mydata$declinehrtuse)^2
+@
+
+
+This is the plot of decrease in Ca incidence in the different countries (y axis ) and decrease in the use of HRT in the corresponding countries as well. 
+
+<<plotuseca >>=
+ plot(mydata$declinehrtuse, mydata$cadecrease,
+     main = "Decrease in Breast Cancer Incidence with HRT",
+     ylab = "Decrease in Breast Ca Incidence",
+     xlab = "decrease in HRT usage")
+
+ abline(hrtuseca <- lm(cadecrease ~ declinehrtuse,  
+                   data = mydata))
+ 
+ ## let's take a look at the simple linear regression model,
+ 
+ library(knitr)
+kable(summary(hrtuseca)$coef, digits=2)
+@
+ 
+
+In several countries as can be seen, there was a increase in Breast Cancer incidence as opposed to decrease in Breast Cancer incidence. In general, the fit line of the scatter plot indicate that with increase in decrease in HRT usage there was corresponding increase in reduction in Breast Cancer incidence as well. However it also suggests that the relationship between reduction in HRT usage and the corresponding reduction in Breast Cancer incidence followed a pattern, that the reduction in Breast Cancer was higher in those countries where the decrease in HRT usage was also very high, and this did not follow an exactly linear trend. Perhaps the trend was more quadratic. This was explored by developing a quadratic model as follows.
+
+<<countrieslt0 >>=
+countrieslt0 <- subset(mydata, cadecrease < 0)
+@
+
+These countries were Australia, Iceland, Israel, Italy, Netherlands, and the UK. 
+Let's tabulate their peakhrtusepct
+
+<<pkhrtuselt0 >>=
+attach(countrieslt0)
+table(peakhrtusepct, country)
+detach(countrieslt0)
+@
+
+<<quadmodel >>=
+
+## You can use predict and lines() to create a quadratic plot
+ ## first set up the quadratic terms
+mydata$dechrtuse2 = mydata$declinehrtuse * mydata$declinehrtuse
+# then we set up the model
+mydata1 <- mydata[,!is.na(mydata)]
+quadmodel <- lm(cadecrease ~ declinehrtuse + dechrtuse2, data = mydata)
+
+# Here is the regression coefficient output
+
+library(knitr)
+kable(summary(quadmodel)$coef, digits=2)
+@
+
+As can be seen in this graph, there is a U or J shaped relationship between derease in HRT use and the derease in Ca incidence. 
+
+<<plotquad >>=
+plot(mydata$declinehrtuse[c(1:15)], predict(quadmodel))
+@
+
+
+We remove data where the decrease in breast cancer were < 0
+
+<<subsetting >>=
+ mydata2 <- subset(mydata, cadecrease >= 0)
+
+# print(summarize(mydata2))
+ 
+plot(mydata2$declinehrtuse, mydata2$cadecrease,
+         main = "Decrease in Breast Cancer Incidence with HRT",
+         ylab = "Decrease in Breast Ca Incidence",
+         xlab = "decrease in HRT usage")
+  abline(hrtca2 <- lm(cadecrease ~ declinehrtuse, data = mydata2))
+
+kable(summary(hrtca2)$coef, digits = 2)
+@
+
+The same pattern persists where a linear relationship is seen between reduction in HRT usage and decrease in Breast Ca incidence can be seen. As can be seenin Figure 2, there is a disproportionate increase in the reduction in breast cancer incidence when the increase in HRT usage is also very high. This is further examined in a subset analysis where the decrease in breast cancer incidence is divided into three equal groups: 
+
+1. No to mild decrease in Breast Ca incidence (0-3.2)
+2. Moderate decrease in Breast Ca incidence (3.2-8.6)
+3. Large decrease in Breast Ca incidence (> 8.6)
+
+We examine graphically the reduction in HRT usage in the three groups of countries. 
+
+<<cat >>=
+
+mydata2$caredcat <- (cut(mydata2$cadecrease, breaks = c(0, 3.2, 8.6, 21)))
+levels(mydata2$caredcat) <- c("Small", "moderate", "large")
+print(table(mydata2$caredcat))
+hrtcadeclevel <- tapply(mydata2$declinehrtuse, mydata2$caredcat, mean)
+
+#print(hrtcadeclevel)
+
+@
+As can be seen, \Sexpr{print(hrtcadeclevel)} shows that with increasing reduction in Breast Cancer incidence, there is a corresponding increase in the average reduction in percentages of HRT use in the countries as well (20\% in the countries with least reduction and 58.5\% in countries with high reduction in breast cancer incidence)
+
+This can be examined in the following bar plot. 
+
+<<barplot1 >>=
+barplot(hrtcadeclevel,
+        col = "black", main = "Bar Plot of % HRT Reduction",
+       xlab = "Extent of Decrease in Breast Cancer",
+        ylab = "Extent of Decrease in HRT Usage",
+        
+       ylim = c(0, 70))
+@
+
+
+Likewise, it can be shown that with a increasing reduction in the HRT usage across the countris, there is corresponding decrease in Breast Cancer incidence three years down the line for those countries that registered a decrease in Breast Cancer incidence and the progression is higher with those countries that had highest fall in HRT usage. 
+
+<<showbar >>=
+## Now, analyse the the extent to reduction in HRT usage
+##print(summary(mydata2$declinehrtuse))
+## given the minimum 8, q1 21.8, q3 65.5, highest 75
+mydata2$hrtdeclinecat <- cut(mydata2$declinehrtuse,
+                            breaks = c(8, 30, 65.6, 75))
+levels(mydata2$hrtdeclinecat) <- c("lt 30", "30-65.5", "gt 65.5")
+
+cadeclevel <- tapply(mydata2$cadecrease, mydata2$hrtdeclinecat, mean)
+@
+
+It can be seen that there is a progressive increase in the reduction in Breast Cancer incidence three years after the reduction in HRT usage \Sexpr{print(cadeclevel)} 
+
+This can be further examined using the boxplots of reduction
+<<box >>=
+boxplot(mydata2$cadecrease ~ mydata2$hrtdeclinecat)
+@
+
+Also as the barplot shows,
+<<barplot2 >>=
+barplot(cadeclevel,
+      col = "black", main = "Bar Plot of Breast Ca Reduction",
+     ylab = "Extent of Decrease in Breast Cancer",
+        xlab = "Extent of Decrease in HRT Usage",
+       
+       ylim = c(0, 20))
+@
+
+\end{document}

@@ -1,0 +1,263 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\textbf{{#1}}}
+\newcommand{\NormalTok}[1]{{#1}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Arindam Basu},
+            pdftitle={Decline in HRT Usage and Breast Cancer Incidence in 17 countries},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+%\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+%\setlength{\droptitle}{-2em}
+  \title{Decline in HRT Usage and Breast Cancer Incidence in 17 countries}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Arindam Basu}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \date{}
+  \predate{}\postdate{}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+The purpose of this document is to describe the association between the
+decline in the contains the R codes for the breast cancer study.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{## set the working directory}
+
+\NormalTok{Mywd <-}\StringTok{ }\KeywordTok{setwd}\NormalTok{(}\StringTok{"/Users/arindambose/GitHub/brca-study"}\NormalTok{)}
+
+\NormalTok{## Read the data into R}
+
+\NormalTok{mydata <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"breastca.csv"}\NormalTok{, }\DataTypeTok{header =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{sep =} \StringTok{","}\NormalTok{)}
+\NormalTok{mydata$hrtuse2 <-}\StringTok{ }\NormalTok{(mydata$declinehrtuse)^}\DecValTok{2}
+\end{Highlighting}
+\end{Shaded}
+
+We regressed the decline in breast cancer incidence on the percentage
+decline in the usage of HRT in the countries studies. The
+
+\begin{Shaded}
+\begin{Highlighting}[]
+ \KeywordTok{plot}\NormalTok{(mydata$declinehrtuse, mydata$cadecrease,}
+     \DataTypeTok{main =} \StringTok{"Decrease in Breast Cancer Incidence with HRT"}\NormalTok{,}
+    \DataTypeTok{ylab =} \StringTok{"Decrease in Breast Ca Incidence"}\NormalTok{,}
+    \DataTypeTok{xlab =} \StringTok{"decrease in HRT usage"}\NormalTok{)}
+
+\KeywordTok{abline}\NormalTok{(cahrt <-}\StringTok{ }\KeywordTok{lm}\NormalTok{(mydata$cadecrease ~}\StringTok{ }\NormalTok{mydata$declinehrtuse,  }
+                  \DataTypeTok{data =} \NormalTok{mydata))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{brcadecline1.jpeg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(cahrt)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mydata$cadecrease ~ mydata$declinehrtuse, data = mydata)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -17.034  -4.220   1.374   5.311  16.614 
+## 
+## Coefficients:
+##                      Estimate Std. Error t value Pr(>|t|)
+## (Intercept)          -0.62479    5.53244  -0.113    0.912
+## mydata$declinehrtuse  0.08853    0.11251   0.787    0.445
+## 
+## Residual standard error: 9.132 on 13 degrees of freedom
+##   (6 observations deleted due to missingness)
+## Multiple R-squared:  0.04546,    Adjusted R-squared:  -0.02796 
+## F-statistic: 0.6192 on 1 and 13 DF,  p-value: 0.4455
+\end{verbatim}
+
+As can be seen from the results, there is a small and statistically
+non-significant increment in the decline rates in breast cancer
+incidence (beta = 0.085, p = 0.45). In addition to this, we also get to
+see that for five countries, while HRT usage declined, this was not
+followed by corresponding decline in Breast cancer incidence in those
+countries. For these countries, there were increment in the incidence
+rates of breast cancer.
+
+Next, we remove data where the decrease in breast cancer were
+\textless{} 0, that is where we noted that breast cancer incidence
+increased even while the rates of usage of HRT declined.
+
+\includegraphics{brcadecline2.jpeg}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = mydata2$cadecrease ~ mydata2$declinehrtuse, data = mydata2)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -7.628 -2.590 -1.878  3.416  9.447 
+## 
+## Coefficients:
+##                       Estimate Std. Error t value Pr(>|t|)  
+## (Intercept)             1.3222     3.8064   0.347   0.7385  
+## mydata2$declinehrtuse   0.1681     0.0762   2.206   0.0632 .
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 5.337 on 7 degrees of freedom
+## Multiple R-squared:   0.41,  Adjusted R-squared:  0.3258 
+## F-statistic: 4.865 on 1 and 7 DF,  p-value: 0.06319
+\end{verbatim}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   2.500   3.700   6.300   8.744  10.000  21.800
+\end{verbatim}
+
+Selecting only those countries that showed decline in breast cancer
+incidence and HRT usage as well shows a sharper decline rate (beta =
+0.17, p = 0.06). This was further tested by examining by creating a
+binary variable on the basis of the median of the rate of decline
+(median percentage for the rate of decline in breast cancer incidence
+was 6.3\%, and this was used to classify the countries with decline as
+high and low ). Alternatively, using the tertiles (33 rd percentiles,
+the countries with different decline rates were classified)
+
+\begin{verbatim}
+##   highredca declinehrtuse
+## 1     FALSE        31.266
+## 2      TRUE        60.275
+\end{verbatim}
+
+As can be seen, for countries that registered more than 6\% decline in
+the breast cancer incidence, the decline in HRT usage was 60.2 percent,
+nearly twice that of the countries with relatively smaller rate of
+decline in breast cancer incidence.
+
+\begin{verbatim}
+## 
+##  (0,3.7] (3.7,10]  (10,21] 
+##        3        4        1
+\end{verbatim}
+
+\begin{verbatim}
+##  (0,3.7] (3.7,10]  (10,21] 
+## 24.44333 47.86750 67.00000
+\end{verbatim}
+
+As can be seen, the decline in HRT usage was around 67\% for the country
+with over 10\% decline in breast cancer decline, while for countries
+where the decline in breast cancer was less than 4\%, there was a
+decline in HRT usage of around 24\%; together, these findings suggest
+that with progressive decline in HRT usage, there were corresponding
+decline in breast cancer incidence as well. This was examined in the
+plot below.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{barplot}\NormalTok{(hrtcadeclevel,}
+        \DataTypeTok{col =} \StringTok{"black"}\NormalTok{, }\DataTypeTok{main =} \StringTok{"Bar Plot of % HRT Reduction"}\NormalTok{,}
+        \DataTypeTok{xlab =} \StringTok{"Extent of Decrease in Breast Cancer"}\NormalTok{,}
+        \DataTypeTok{ylab =} \StringTok{"Extent of Decrease in HRT Usage"}\NormalTok{,}
+       \DataTypeTok{names.arg =} \NormalTok{caredcatnames,}
+        \DataTypeTok{ylim =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{70}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{brcadecline3.jpeg}
+
+\end{document}

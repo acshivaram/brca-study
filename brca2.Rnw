@@ -1,0 +1,102 @@
+\documentclass{article}
+
+\title{A preliminary analysis of the trends in Breast Cancer, 1996-2007}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Steps of Analyses and what was done}
+
+In this paper, we show a few sphagetti plots where we plot the time trends of breast caner among women aged 45-85+ in 16 industrialised countries. These countries were: Australia (Queensland), Canada, Denmark, Finland, France, Iceland, Israel (jews), Italy, Netherlands, New Zealand, Norway, Spain, Sweden, Switzerland, UK (Milion Women's Study), and the United States (SEER 9 Region data). Data for breast cancer were abstracted for the years 1996 - 2007 from the IARC/ci5 database for age standardised incidence rates for women aged 45-85+ years. We initially start with the overall spga sphagetti plots for the en all countries that had peak HRT in different years, and then explode the plots for two time points, one for those countries that sta had peak HRT usage in the years 1996-1998, and then those countries that had peak HRT usage in 2001 and afterwards.
+
+<<prelims, echo = FALSE>>=
+
+setwd("/Users/arindambose/GitHub/brca-study")
+
+mydata <- data.frame(read.csv("brcafinal2.csv",
+                              sep = ","))
+mydatamod <- mydata[c(1:16) ,c(1:7, 9:16)]
+@
+
+The following chart shows the names of the countries and the year when they reached peak HRT usage
+
+<<countrypeak, echo = FALSE>>=
+countrypeakyr <- mydatamod[,c(1,2,6)]
+print(countrypeakyr)
+@
+
+Initially, we show the sphagetti plot for all countries in the data.
+
+<<sphagettiforall, echo = FALSE>>=
+# First, we reshape the data from wide to long format
+mydatashapeall <- reshape(mydatamod,
+                       varying = c("inc96", "inc97",
+                                   "inc98", "inc00",
+                                   "inc01", "inc02",
+                                   "inc03", "inc04",
+                                   "inc05", "inc06", "inc07"),
+                       v.names = "incidence",
+                       direction = "long")
+# then, we print out the chart of all countreis in the list
+
+interaction.plot(mydatashapeall$time,
+                 mydatashapeall$Country, mydatashapeall$incidence,  legend=F,
+                 main = "Sphagetti plot of the incidence rates of Breast Cancer among women 45-85+, in all countries, 1996-2007",
+                 xlab = "Time point where 1 is 1996 and 11 is 2007",
+                 ylab = "Age-standardised incidence rate of BrCa"
+                 )
+@
+
+Visual inspection of this graph suggests two peaks in the plot, one around 2000 and one around 2004-2005 in breast cancer and thereafter there is a drop as po particularly afer the 2001 and then again in 2004. To characteriset this further, we explode this graph into two subgroups, one where peak HRT was reached around 1996-1998 (or at least earlier than 2000 and one where peak HRT uasage was reached after 2000) and examine the two graphs. We found six such countries.
+
+<<sphagettipre2k, echo = FALSE>>=
+
+mydatashape19967 <- reshape(mydatamod[c(9,10,12,13,14,15),],
+                       varying = c("inc96", "inc97",
+                                   "inc98", "inc00",
+                                   "inc01", "inc02",
+                                   "inc03", "inc04",
+                                   "inc05", "inc06", "inc07"),
+                       v.names = "incidence",
+                       direction = "long")
+
+## plot where HRT usage reached its peak in the year 1996-1998
+
+interaction.plot(mydatashape19967$time,
+                 mydatashape19967$Country, mydatashape19967$incidence,  legend=F,
+                 main = "Sphagetti plot of the incidence rates of Breast Cancer among women 45-85+, in countries where peak HRT was in 1996-1998, 1996-2007",
+                 xlab = "Time point where 1 is 1996 and 11 is 2007",
+                 ylab = "Age-standardised incidence"
+                 )
+@
+
+In this graph, we see a reduction in BrCa incidence from 2003 onwards, but a peak in two different time points (??)
+
+Then, we explode another set of graphs where peak HRT use was reached after 2000.
+
+<<peakhrtusepost2k, echo = FALSE>>=
+## plot where HRT usage reached its peak in 2000 afterwards
+##
+
+mydatashape2001 <- reshape(mydatamod[c(1:8,11,16),],
+                            varying = c("inc96", "inc97",
+                                        "inc98", "inc00",
+                                        "inc01", "inc02",
+                                        "inc03", "inc04",
+                                        "inc05", "inc06", "inc07"),
+                            v.names = "incidence",
+                            direction = "long")
+
+interaction.plot(mydatashape2001$time,
+                 mydatashape2001$Country, mydatashape2001$incidence,  legend=F,
+                 main = "Sphagetti plot of the incidence rates of Breast Cancer among women 45-85+, in countries where peak HRT was in 2001 or later, 1996-2007",
+                 xlab = "Time point where 1 is 1996 and 11 is 2007",
+                 ylab = "Age-standardised incidence"
+)
+@
+
+Once again, there is a reduction in the BrCa from 2003 onwards. althought the BrCa rates reached a peak in 2002-2003 in most countries almost coeval with the peak in HRT usage.
+
+\end{document}

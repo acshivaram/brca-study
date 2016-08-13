@@ -1,0 +1,1006 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.1)  24 MAY 2015 19:48
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**AnnBrCaPaper1.tex
+(./AnnBrCaPaper1.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 21 languages loaded.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+./AnnBrCaPaper1.tex:7: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \section
+            {The Work so Far }
+? s
+OK, entering \scrollmode...
+
+./AnnBrCaPaper1.tex:7: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \section{The Work so Far }
+                              
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+No file AnnBrCaPaper1.aux.
+\openout1 = `AnnBrCaPaper1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+./AnnBrCaPaper1.tex:45: Undefined control sequence.
+<argument> \tymax 
+                  
+l.45 \setlength{\tymax}{0.5\linewidth}
+                                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:45: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.45 \setlength{\tymax}{0.5\linewidth}
+                                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:45: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.45 \setlength{\tymax}{0.5\linewidth}
+                                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./AnnBrCaPaper1.tex:48: LaTeX Error: Environment tabulary undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \begin{tabulary}
+                     {\textwidth}{@{}LLLL@{}} \toprule
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./AnnBrCaPaper1.tex:48: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.48 \begin{tabulary}{\textwidth}
+                                 {@{}LLLL@{}} \toprule
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:48: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.48 \begin{tabulary}{\textwidth}
+                                 {@{}LLLL@{}} \toprule
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:48: Undefined control sequence.
+l.48 ...tabulary}{\textwidth}{@{}LLLL@{}} \toprule
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:49: Misplaced alignment tab character &.
+l.49 Country&
+             Reduction in HRT Usage (pct)&Reduction in Br Ca (percent)&Age C...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:49: Misplaced alignment tab character &.
+l.49 Country&Reduction in HRT Usage (pct)&
+                                          Reduction in Br Ca (percent)&Age C...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:49: Misplaced alignment tab character &.
+l.49 ... Usage (pct)&Reduction in Br Ca (percent)&
+                                                  Age Category of Screening\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:50: Undefined control sequence.
+<recently read> \midrule 
+                         
+l.50 \midrule
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:51: Misplaced alignment tab character &.
+l.51 Australia&
+               43&6.7&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:51: Misplaced alignment tab character &.
+l.51 Australia&43&
+                  6.7&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:51: Misplaced alignment tab character &.
+l.51 Australia&43&6.7&
+                      40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:52: Misplaced alignment tab character &.
+l.52 Canada&
+            70&8&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:52: Misplaced alignment tab character &.
+l.52 Canada&70&
+               8&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:52: Misplaced alignment tab character &.
+l.52 Canada&70&8&
+                 50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:53: Misplaced alignment tab character &.
+l.53 Denmark&
+             19&5.63&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:53: Misplaced alignment tab character &.
+l.53 Denmark&19&
+                5.63&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:53: Misplaced alignment tab character &.
+l.53 Denmark&19&5.63&
+                     50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:54: Misplaced alignment tab character &.
+l.54 France&
+            66&6.3&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:54: Misplaced alignment tab character &.
+l.54 France&66&
+               6.3&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:54: Misplaced alignment tab character &.
+l.54 France&66&6.3&
+                   50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:55: Misplaced alignment tab character &.
+l.55 Italy&
+           42&6.18&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:55: Misplaced alignment tab character &.
+l.55 Italy&42&
+              6.18&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:55: Misplaced alignment tab character &.
+l.55 Italy&42&6.18&
+                   50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:56: Misplaced alignment tab character &.
+l.56 United States&
+                   33&6.7&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:56: Misplaced alignment tab character &.
+l.56 United States&33&
+                      6.7&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:56: Misplaced alignment tab character &.
+l.56 United States&33&6.7&
+                          40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:57: Misplaced alignment tab character &.
+l.57 Germany&
+             50&8.8&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:57: Misplaced alignment tab character &.
+l.57 Germany&50&
+                8.8&40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:57: Misplaced alignment tab character &.
+l.57 Germany&50&8.8&
+                    40--75\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:58: Misplaced alignment tab character &.
+l.58 Belgium&
+             60&9.5&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:58: Misplaced alignment tab character &.
+l.58 Belgium&60&
+                9.5&50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:58: Misplaced alignment tab character &.
+l.58 Belgium&60&9.5&
+                    50--69\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./AnnBrCaPaper1.tex:60: Undefined control sequence.
+l.60 \bottomrule
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./AnnBrCaPaper1.tex:62: LaTeX Error: \begin{minipage} on input line 44 ended by
+ \end{tabulary}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{tabulary}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 63.
+./AnnBrCaPaper1.tex:67: Undefined control sequence.
+l.67 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:67: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.67 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{our...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:67: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.67 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {ourdata.jpg}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:67: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.67 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {ourdata.jpg}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:72: Undefined control sequence.
+l.72 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:72: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.72 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{our...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:72: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.72 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {ourfigure.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:72: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.72 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {ourfigure.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 1 
+ []
+
+[1
+
+{/usr/local/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \vbox (62.70274pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 2 
+ []
+
+[2]
+./AnnBrCaPaper1.tex:81: Undefined control sequence.
+l.81 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:81: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.81 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{zbu...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:81: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.81 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbuk.jpg}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:81: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.81 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbuk.jpg}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (37.5749pt too wide) in paragraph at lines 80--82
+[]\OT1/cmr/m/n/10 Figure 2. Data from the pa-per by Zbuk [keep-aspec-tra-tio,wi
+dth=height=0.75]zbuk.jpg 
+ []
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 3 
+ []
+
+[3]
+./AnnBrCaPaper1.tex:85: Undefined control sequence.
+l.85 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:85: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.85 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{zbu...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:85: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.85 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbukgraph.jpg}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:85: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.85 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbukgraph.jpg}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (4.2971pt too wide) in paragraph at lines 84--86
+\OT1/cmr/m/n/10 structed from the zbuk data. [keep-aspec-tra-tio,width=height=0
+.75]zbukgraph.jpg 
+ []
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 4 
+ []
+
+[4]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 5 
+ []
+
+[5]
+./AnnBrCaPaper1.tex:89: Undefined control sequence.
+l.89 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:89: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.89 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{zbu...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:89: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.89 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbukoutput.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:89: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.89 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {zbukoutput.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 6 
+ []
+
+[6]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 7 
+ []
+
+[7]
+./AnnBrCaPaper1.tex:93: Undefined control sequence.
+l.93 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:93: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.93 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{ver...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:93: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.93 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {verkooijen.jpg}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:93: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.93 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {verkooijen.jpg}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (108.6398pt too wide) in paragraph at lines 92--94
+[]\OT1/cmr/m/n/10 Figure 5 presents the ta-bles from Verkooi-jen study [keep-as
+pec-tra-tio,width=height=0.75]verkooijen.jpg 
+ []
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 8 
+ []
+
+[8]
+./AnnBrCaPaper1.tex:97: Undefined control sequence.
+l.97 \includegraphics
+                     [keepaspectratio,width=\textwidth,height=0.75\textheigh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:97: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.97 ...raphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{ver...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:97: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.97 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {verkgraph.jpg}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:97: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.97 ...o,width=\textwidth,height=0.75\textheight]
+                                                  {verkgraph.jpg}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (11.44525pt too wide) in paragraph at lines 96--98
+\OT1/cmr/m/n/10 structed from Verkooi-jen study [keep-aspec-tra-tio,width=heigh
+t=0.75]verkgraph.jpg 
+ []
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (5.00002pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 9 
+ []
+
+[9]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 10 
+ []
+
+[10]
+./AnnBrCaPaper1.tex:101: Undefined control sequence.
+l.101 \includegraphics
+                      [keepaspectratio,width=\textwidth,height=0.75\textheig...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./AnnBrCaPaper1.tex:101: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   h
+l.101 ...aphics[keepaspectratio,width=\textwidth,h
+                                                  eight=0.75\textheight]{ver...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./AnnBrCaPaper1.tex:101: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.101 ...,width=\textwidth,height=0.75\textheight]
+                                                  {verkoutput.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./AnnBrCaPaper1.tex:101: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.101 ...,width=\textwidth,height=0.75\textheight]
+                                                  {verkoutput.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 11 
+ []
+
+[11]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 12 
+ []
+
+[12]
+Overfull \vbox (43.90276pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 13 
+ []
+
+[13]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 14 
+ []
+
+[14]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 15 
+ []
+
+[15]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 16 
+ []
+
+[16]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 17 
+ []
+
+[17]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 18 
+ []
+
+[18]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 19 
+ []
+
+[19]
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 20 
+ []
+
+[20
+
+]
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+(./AnnBrCaPaper1.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Overfull \vbox (10.0pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (10.00003pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/10 21 
+ []
+
+[21] ) 
+Here is how much of TeX's memory you used:
+ 218 strings out of 494522
+ 2460 string characters out of 6167206
+ 53172 words of memory out of 5000000
+ 3563 multiletter control sequences out of 15000+600000
+ 4544 words of font info for 17 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 23i,5n,18p,482b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb>
+Output written on AnnBrCaPaper1.pdf (21 pages, 43335 bytes).
+PDF statistics:
+ 80 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

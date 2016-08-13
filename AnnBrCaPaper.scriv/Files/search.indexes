@@ -1,36 +1,225 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="13">
-            <Title>brcapaper2</Title>
-            <Text>-------------------------------------------------------------------------------
-      name:  &lt;unnamed&gt;
-       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
-&gt; per2.md
-  log type:  text
- opened on:  15 Oct 2014, 19:49:16
+        <Document ID="10">
+            <Title>BrCaData</Title>
+        </Document>
+        <Document ID="19">
+            <Title>AnnBrCaPaper</Title>
+            <Text>## The Work so Far (Preliminary Analyses)
 
-. 
-. tab programtype1
+Data from the spreadsheet was abstracted and a new data table was created that contained the following information:
 
-ProgramType |
-          1 |      Freq.     Percent        Cum.
-------------+-----------------------------------
-          N |         11       42.31       42.31
-         NS |          8       30.77       73.08
-          O |          2        7.69       80.77
-          S |          5       19.23      100.00
-------------+-----------------------------------
-      Total |         26      100.00
+1. The name of the country where the screening for breast cancer, 
+2. The percentage reduction in the usage of HRT between peak use and the last reported use
+3. The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50-64+)
+4. The Age Range at which Screening for Breast Cancer using Mammograms begin.  If the age range was 50-64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.
 
-. 
-. log close
-      name:  &lt;unnamed&gt;
-       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
-&gt; per2.md
-  log type:  text
- closed on:  15 Oct 2014, 19:49:16
--------------------------------------------------------------------------------
+In addition to this, data from the papers by Verkooijen et al 
+\cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper
+
+1. The name of the country where the study was conducted
+2. The percentage of reduction from peak HRT usage till the date when it was reported
+3. The reduction in percentage in the corresponding breast cancer incidence as reported in the paper. 
+
+These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins. 
+
+## Results
+
+Table 1 shows the data abstracted from the current dataset.
+
+| Country   | Reduction in HRT Usage (pct) | Reduction in Br Ca (percent) |  Age Category of Screening |
+|---------- | ---------------------------- | -------------------------    | ---------------------------| 
+| Australia | 43                           | 6.7                          | 40-75                      |             
+| Canada    | 70                           | 8                            | 50-69                      | 
+| Denmark   | 19                           | 5.63                         | 50-69                      |
+| France    | 66                           | 6.3                          | 50-69                      |
+| Italy     | 42                           | 6.18                         | 50-69                      |
+| United States |  33                       |6.7                           | 40-75                      |
+| Germany   | 50                           |8.8                           | 40-75  |
+| Belgium   |60  |9.5  |50-69 | 
+ 
+
+![Graph from our Data](ourdata.jpg)
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper
+
+Exhibit 1 shows the results of the regression model from the data abstracted for this analysis.
+![Regression Output](ourfigure.png)
+
+## Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)
+
+For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen. 
+
+Figure 2. Data from the paper by Zbuk
+![Table from Zbuk Paper](zbuk.jpg)
+
+Figure 3 presents the results of data analyses and regression model constructed from the zbuk data. 
+![Graph from the Zbuk Study](zbukgraph.jpg)
+
+Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper
+![Regression Table from Zbuk Paper](zbukoutput.png)
+
+Figure 5 presents the tables from Verkooijen study
+![Table from Verkooijen Study](verkooijen.jpg)
+
+Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study
+![Graph from Verkooijen Study](verkgraph.jpg)
+
+Figure 7 presents the figure of the regression table from Verkooijen study
+![Regression Table from Verkooijen Study](verkoutput.png)
+
+
+## Reference
+
+{Bibliography}
+
+
+
+</Text>
+        </Document>
+        <Document ID="15">
+            <Title>A Report on the Breast Cancer Study</Title>
+            <Text>## The Work so Far (Preliminary Analyses)
+
+Data from the spreadsheet was abstracted and a new data table was created that contained the following information:
+
+1. The name of the country where the screening for breast cancer, 
+2. The percentage reduction in the usage of HRT between peak use and the last reported use
+3. The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50-64+)
+4. The Age Range at which Screening for Breast Cancer using Mammograms begin.  If the age range was 50-64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.
+
+In addition to this, data from the papers by Verkooijen et al 
+\cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper
+
+1. The name of the country where the study was conducted
+2. The percentage of reduction from peak HRT usage till the date when it was reported
+3. The reduction in percentage in the corresponding breast cancer incidence as reported in the paper. 
+
+These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins. 
+
+## Results
+
+Table 1 shows the data abstracted from the current dataset.
+
+| Country   | Reduction in HRT Usage (pct) | Reduction in Br Ca (percent) |  Age Category of Screening |
+|---------- | ---------------------------- | -------------------------    | ---------------------------| 
+| Australia | 43                           | 6.7                          | 40-75                      |             
+| Canada    | 70                           | 8                            | 50-69                      | 
+| Denmark   | 19                           | 5.63                         | 50-69                      |
+| France    | 66                           | 6.3                          | 50-69                      |
+| Italy     | 42                           | 6.18                         | 50-69                      |
+| United States |  33                       |6.7                           | 40-75                      |
+| Germany   | 50                           |8.8                           | 40-75  |
+| Belgium   |60  |9.5  |50-69 | 
+ 
+
+![Graph from our Data](ourdata.jpg)
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper
+
+Exhibit 1 shows the results of the regression model from the data abstracted for this analysis.
+![Regression Output](ourfigure.png)
+
+## Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)
+
+For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen. 
+
+Figure 2. Data from the paper by Zbuk
+![Table from Zbuk Paper](zbuk.jpg)
+
+Figure 3 presents the results of data analyses and regression model constructed from the zbuk data. 
+![Graph from the Zbuk Study](zbukgraph.jpg)
+
+Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper
+![Regression Table from Zbuk Paper](zbukoutput.png)
+
+Figure 5 presents the tables from Verkooijen study
+![Table from Verkooijen Study](verkooijen.jpg)
+
+Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study
+![Graph from Verkooijen Study](verkgraph.jpg)
+
+Figure 7 presents the figure of the regression table from Verkooijen study
+![Regression Table from Verkooijen Study](verkoutput.png)
+
+
+
+
+
+</Text>
+        </Document>
+        <Document ID="21">
+            <Title>AnnBrCaPaper1 (APA 6)</Title>
+            <Text>
+## The Work so Far (Preliminary Analyses)
+
+Data from the spreadsheet was abstracted and a new data table was created that contained the following information:
+
+1. The name of the country where the screening for breast cancer, 
+2. The percentage reduction in the usage of HRT between peak use and the last reported use
+3. The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50-64+)
+4. The Age Range at which Screening for Breast Cancer using Mammograms begin.  If the age range was 50-64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.
+
+In addition to this, data from the papers by Verkooijen et al (Verkooijen, Bouchardy, Vinh-Hung, Rapiti, &amp; Hartman, 2009) and Zbuk et al (Zbuk &amp; Anand, 2012) were extracted. For each of these data, the following information were abstracted from each paper
+
+1. The name of the country where the study was conducted
+2. The percentage of reduction from peak HRT usage till the date when it was reported
+3. The reduction in percentage in the corresponding breast cancer incidence as reported in the paper. 
+
+These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins. 
+
+## Results
+
+Table 1 shows the data abstracted from the current dataset.
+
+| Country   | Reduction in HRT Usage (pct) | Reduction in Br Ca (percent) |  Age Category of Screening |
+|---------- | ---------------------------- | -------------------------    | ---------------------------| 
+| Australia | 43                           | 6.7                          | 40-75                      |             
+| Canada    | 70                           | 8                            | 50-69                      | 
+| Denmark   | 19                           | 5.63                         | 50-69                      |
+| France    | 66                           | 6.3                          | 50-69                      |
+| Italy     | 42                           | 6.18                         | 50-69                      |
+| United States |  33                       |6.7                           | 40-75                      |
+| Germany   | 50                           |8.8                           | 40-75  |
+| Belgium   |60  |9.5  |50-69 | 
+ 
+
+![Graph from our Data](ourdata.jpg)
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper
+
+Exhibit 1 shows the results of the regression model from the data abstracted for this analysis.
+![Regression Output](ourfigure.png)
+
+## Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)
+
+For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen. 
+
+Figure 2. Data from the paper by Zbuk
+![Table from Zbuk Paper](zbuk.jpg)
+
+Figure 3 presents the results of data analyses and regression model constructed from the zbuk data. 
+![Graph from the Zbuk Study](zbukgraph.jpg)
+
+Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper
+![Regression Table from Zbuk Paper](zbukoutput.png)
+
+Figure 5 presents the tables from Verkooijen study
+![Table from Verkooijen Study](verkooijen.jpg)
+
+Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study
+![Graph from Verkooijen Study](verkgraph.jpg)
+
+Figure 7 presents the figure of the regression table from Verkooijen study
+![Regression Table from Verkooijen Study](verkoutput.png)
+
+
+## Reference
+
+Verkooijen, H. M., Bouchardy, C., Vinh-Hung, V., Rapiti, E., &amp; Hartman, M. (2009). The incidence of breast cancer and changes in the use of hormone replacement therapy: A review of the evidence. Maturitas, 64(2), 80-5. doi:10.1016/j.maturitas.2009.07.015
+
+Zbuk, K., &amp; Anand, S. S. (2012). Declining incidence of breast cancer after decreased use of hormone-replacement therapy: Magnitude and time lags in different countries. Journal of Epidemiology and Community Health, 66(1), 1-7. doi:10.1136/jech.2008.083774
+
+
+
 </Text>
         </Document>
         <Document ID="3">
@@ -77,35 +266,6 @@ Their source: Globocan
 Plus word documents used for HRT Use
 </Text>
         </Document>
-        <Document ID="7">
-            <Title>Tables</Title>
-            <Text>Table</Text>
-        </Document>
-        <Document ID="8">
-            <Title>Tables</Title>
-            <Text>Table 1. Programme Type
-
-#                               
-
-
-Table 2. Detection Methods Used for Detection
-
-￼
-
-
-| Method Used | N | % |
-|  ---                  | --- | --- |
-
-</Text>
-        </Document>
-        <Document ID="4">
-            <Title>Introduction</Title>
-            <Text>The purpose of this paper is to test whether trends in HRT use and mammography screening might explain the different trends in breast cancer incidence between countries.  
-
-Thanks very much for your interest in working on this with us.
- 
-may be enough for an initial model?  </Text>
-        </Document>
         <Document ID="11">
             <Title>References</Title>
             <Text>
@@ -140,11 +300,87 @@ VERKOOIJEN, H. M., KOOT, V., FIORETTA, G., VAN DER HEIDEN, M., SCHIPPER, M., RAP
 VON EULER-CHELPIN, M. 2011. Breast cancer incidence and use of hormone therapy in Denmark 1978–2007. Cancer Causes &amp; Control, 22, 181-187.
 ZBUK, K. &amp; ANAND, S. S. 2012. Declining incidence of breast cancer after decreased use of hormone-replacement therapy: magnitude and time lags in different countries. Journal of epidemiology and community health, 66, 1-7.</Text>
         </Document>
-        <Document ID="14">
-            <Title>This is a very good font to work with the helvetica</Title>
-            <Text>This is a very good font to work with the helvetica neue. 
+        <Document ID="4">
+            <Title>Introduction</Title>
+            <Text>The purpose of this paper is to test whether trends in HRT use and mammography screening might explain the different trends in breast cancer incidence between countries.  
 
-Receipt: 609756897</Text>
+Thanks very much for your interest in working on this with us.
+ 
+may be enough for an initial model?  </Text>
+        </Document>
+        <Document ID="16">
+            <Title>3 Snapshot (2015-05-23 23-15-05 +1200)</Title>
+            <Text>Quotation:
+(a snapshot image had to be removed for RTF export) 
+Comment:
+This shows the decrease in BrCa and decrease in HRT
+{Zbuk 2012@3} sente:/sentelib/Zbuk+2012
+
+impact of HRT cessation appears most significant and ... (pp. 1)
+"impact of HRT cessation appears most significant and immediate in countries with the largest absolute decline in HRT use."
+largest absolute decline
+
+the magnitude of the decline in breast cancer ... (pp. 1)
+"the magnitude of the decline in breast cancer incidence, and its timing with respect to HRT cessation, shows considerable variability between nations"
+magntidue and time lag varies
+
+Snapshot (2015-05-23 23:15:05 +1200) (pp. 3)
+"#"
+This shows the decrease in BrCa and decrease in HRT
+
+Current HRT users, on the other hand, had ... (pp. 81)
+"Current HRT users, on the other hand, had a significantly increased risk, which was largest for current users of combined HRT (RR = 2.00), but also significantly increased in current users of estrogen-only HRT (RR = 1.30)."
+Combined HRT risk, RR = 2.00, much higher than the 1.32, or 1.24, or 1.42 depending on what you see
+
+In 1996, an Oxford-based group began collecting risk-factor ... (pp. 81)
+"In 1996, an Oxford-based group began collecting risk-factor (including HRT use) and follow-up data from 1,084,110 women in the United Kingdom aged 50-64 who attended the national breast screening programme. The initial results of this Million Women Study were reported in 2003 after a 2.6-year median follow-up, at which time 6096 breast cancers had been recorded"
+So, the cumulative incidence would be something like 562 per 100, 000
+
+it was not until publication of the results ... (pp. 81)
+"it was not until publication of the results of the Women’s Health Initiative (WHI) study in 2002 [9] and the Million Women Study in 2003 [10] that women and doctors started reconsidering the use of HRT and as a consequence sales of HRT started to drop sharply [11]"
+Two major studies: (1) Women's Health Initiative Study 2002, and 2) Million Women Study in 2003, two studies coming out after each other. The E/P combination of HRT was very popular and people knew that they were associated with increased risk of breast cancer. Now the question is, whether with reduction in the sales and usage of HRT, do the risks of breast cancer or the incidence of breast cancer coming down as well? This is what this study is about.
+
+Overall breast cancer risk was significantly increased in ... (pp. 81)
+"Overall breast cancer risk was significantly increased in the com-bined HRT trial (hazard ratio [HR] = 1.24), and this risk was similar across age groups, increased with duration of use and was most apparent in women who had used HRT before entry into the trial [13]"
+HR = 1.24 for E/P trial lower than the cohort study result
+
+Report from the Nurses’ Health Study was the ... (pp. 81)
+"Report from the Nurses’ Health Study was the first large study to find a significantly increased risk of breast cancer both for estrogen-only HRT (RR = 1.32) and for combined HRT (estrogen plus progestagen) (RR = 1.41) [12]. Subsequently, a comprehensive overview of all the available case-control and cohort data from 51 studies, involving 17,949 women with breast cancer and 35,916 controls, showed that the increased risk of breast cancer was confined to current and recent use of HRT [8]. Among these current and recent users, breast cancer risks increased with duration of use and reached a 56% rel-ative increase after more than 15 years of use. The excess risk was reduced after cessation of use of HRT and largely disappeared after about 5 years"
+RR = 1.32, or RR = 1.41, plus after 15 years of use RR = 1.56??
+
+The Million Women Study was the first to ... (pp. 81)
+"The Million Women Study was the first to clearly establish that the risk of fatal breast cancer was also significantly increased in current users (RR = 1.22)"
+RR = 1.22
+
+This observation generated the hypothesis that HRT use ... (pp. 81)
+"This observation generated the hypothesis that HRT use is particu-larly associated with lobular breast cancer subtypes (pure lobular or ducto-lobular breast cancer)."
+Lobular more than ductal?
+
+If the association between breast cancer risk and HRT to be real, then: (pp. 82)
+"If the association between breast cancer risk and current use of HRT is indeed real, the following effects are to be expected as a consequence of the drop in use of HRT. 1. An overall decrease in the incidence of breast cancer, mainly in women aged 50-60 years, who are most likely to be current users of HRT. This decrease would be most pronounced in populations with the highest prevalence and longest duration of combined HRT use. 2. A drop in the incidence of lobular breast cancer, which is sharper than the incidence reduction in ductal breast cancer. Similarly, a drop in ER+ and/or PR+ and low-grade breast cancer would be more pronounced than a drop in ER− and/or PR− and high-grade breast cancer. 3. A (partial) reversal of the changed age-specific incidence pattern, i.e. the previously discussed ‘incidence peak’, would be expected."
+This decrease would be most pronounced in populations with highest prevalene and longest duration. Which means, if we can stratify the prevalence and then we test the %, see if there is a relationship between % of usage (both pre and post) and the subsequent reduction,
+
+Increase in br ca associated with mammographic screening (pp. 82)
+Role of Mammographic screening
+
+Mammography or Not (pp. 82)
+"Geneva investigators showed that the incidence peak was present only among women who had ever used HRT, regardless of whether they had undergone mammography screening or not"
+HRT and Br Ca
+
+Tumor doubling time of 50-100 days, and 30-35 ... (pp. 82)
+"tumor doubling time of 50-100 days, and 30-35 tumor doublings needed to achieve a tumor size of 1 cm diameter, a single malignant tumor cell requires 5-10 years to grow to a clinically and/or mammographically detectable cell mass (i.e. 1 cm)."
+How long does it take for a tumor to grow and what are the calculations?
+
+What is the cause of HRT and Br Ca? (pp. 82)
+New expression of estrogen, or what?
+
+Snapshot (2015-05-24 15:24:15 +1200) (pp. 83)
+"￼"
+Extent of reduction is something what we are findings as well. Let's see, we got US, Germany, Australia, Belgium, France, but not UK as we could not get authentic data for the year range of 1998 - 2001
+
+Inthe Kaiser Permanente data set, for example, the ... (pp. 84)
+"Inthe Kaiser Permanente data set, for example, the reduction in mam-mography use was about 2-7%, and it is very unlikely that this is a major explanation of the much larger reductions in breast cancer rates [36]. In addition, follow-up data from the WHI study provide further evidence against changes in mammography use being an explanation for the observed reduction in the incidence of breast cancer, since the 2% difference in frequency of mammography use between 2002 and 2003 for women using HRT is insufficient to account for the 43% reduction in the incidence of breast cancer [44]. The observed sharp drop in breast cancer incidence in France between 2000 and 2006, despite a 30% increase in mammography screening rates in the 50-74-year-olds, is further supportive of a role for HRT in breast carcinogenesis"
+Explanation as to why drop in mammography is not sufficient to explain the drop in Br Ca following discontinuation of the HRT</Text>
         </Document>
         <Document ID="5">
             <Title>Methods</Title>
@@ -365,6 +601,168 @@ Results of the Data Analysis
 
 
 </Text>
+        </Document>
+        <Document ID="13">
+            <Title>brcapaper2</Title>
+            <Text>-------------------------------------------------------------------------------
+      name:  &lt;unnamed&gt;
+       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
+&gt; per2.md
+  log type:  text
+ opened on:  15 Oct 2014, 19:49:16
+
+. 
+. tab programtype1
+
+ProgramType |
+          1 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          N |         11       42.31       42.31
+         NS |          8       30.77       73.08
+          O |          2        7.69       80.77
+          S |          5       19.23      100.00
+------------+-----------------------------------
+      Total |         26      100.00
+
+. 
+. log close
+      name:  &lt;unnamed&gt;
+       log:  /Users/arindambose/Documents/ann-brca-paper/annetal/R-codes/brcapa
+&gt; per2.md
+  log type:  text
+ closed on:  15 Oct 2014, 19:49:16
+-------------------------------------------------------------------------------
+</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Tables</Title>
+            <Text>Table</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Tables</Title>
+            <Text>Table 1. Programme Type
+
+#                               
+
+
+Table 2. Detection Methods Used for Detection
+
+￼
+
+
+| Method Used | N | % |
+|  ---                  | --- | --- |
+
+</Text>
+        </Document>
+        <Document ID="14">
+            <Title>This is a very good font to work with the helvetica</Title>
+            <Text>This is a very good font to work with the helvetica neue. 
+
+Receipt: 609756897</Text>
+        </Document>
+        <Document ID="20">
+            <Title>AnnBrCaPaper</Title>
+            <Text>Title: AnnBrCaPaper Author: Arindam Bose Base Header Level: 1
+
+The Work so Far (Preliminary Analyses)
+
+Data from the spreadsheet was abstracted and a new data table was created that contained the following information:
+
+The name of the country where the screening for breast cancer,
+The percentage reduction in the usage of HRT between peak use and the last reported use
+The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50–64+)
+The Age Range at which Screening for Breast Cancer using Mammograms begin. If the age range was 50–64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.
+In addition to this, data from the papers by Verkooijen et al \cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper
+
+The name of the country where the study was conducted
+The percentage of reduction from peak HRT usage till the date when it was reported
+The reduction in percentage in the corresponding breast cancer incidence as reported in the paper.
+These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins.
+
+Results
+
+Table 1 shows the data abstracted from the current dataset.
+
+Country	Reduction in HRT Usage (pct)	Reduction in Br Ca (percent)	Age Category of Screening
+Australia	43	6.7	40–75
+Canada	70	8	50–69
+Denmark	19	5.63	50–69
+France	66	6.3	50–69
+Italy	42	6.18	50–69
+United States	33	6.7	40–75
+Germany	50	8.8	40–75
+Belgium	60	9.5	50–69
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper
+
+Exhibit 1 shows the results of the regression model from the data abstracted for this analysis. 
+
+Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)
+
+For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen.
+
+Figure 2. Data from the paper by Zbuk 
+
+Figure 3 presents the results of data analyses and regression model constructed from the zbuk data. 
+
+Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper 
+
+Figure 5 presents the tables from Verkooijen study 
+
+Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study 
+
+Figure 7 presents the figure of the regression table from Verkooijen study 
+
+The Work so Far (Preliminary Analyses)
+
+Data from the spreadsheet was abstracted and a new data table was created that contained the following information:
+
+The name of the country where the screening for breast cancer,
+The percentage reduction in the usage of HRT between peak use and the last reported use
+The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50–64+)
+The Age Range at which Screening for Breast Cancer using Mammograms begin. If the age range was 50–64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.
+In addition to this, data from the papers by Verkooijen et al \cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper
+
+The name of the country where the study was conducted
+The percentage of reduction from peak HRT usage till the date when it was reported
+The reduction in percentage in the corresponding breast cancer incidence as reported in the paper.
+These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins.
+
+Results
+
+Table 1 shows the data abstracted from the current dataset.
+
+Country	Reduction in HRT Usage (pct)	Reduction in Br Ca (percent)	Age Category of Screening
+Australia	43	6.7	40–75
+Canada	70	8	50–69
+Denmark	19	5.63	50–69
+France	66	6.3	50–69
+Italy	42	6.18	50–69
+United States	33	6.7	40–75
+Germany	50	8.8	40–75
+Belgium	60	9.5	50–69
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper
+
+Exhibit 1 shows the results of the regression model from the data abstracted for this analysis. 
+
+Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)
+
+For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen.
+
+Figure 2. Data from the paper by Zbuk 
+
+Figure 3 presents the results of data analyses and regression model constructed from the zbuk data. 
+
+Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper 
+
+Figure 5 presents the tables from Verkooijen study 
+
+Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study 
+
+Figure 7 presents the figure of the regression table from Verkooijen study </Text>
+        </Document>
+        <Document ID="9">
+            <Title>Breast Cancer Data</Title>
         </Document>
     </Documents>
 </SearchIndexes>

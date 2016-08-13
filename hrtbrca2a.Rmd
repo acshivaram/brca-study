@@ -1,0 +1,95 @@
+---
+title: "Decline in HRT Usage and Breast Cancer Incidence in 17 countries"
+author: "Arindam Basu"
+output:
+  word_document: default
+  pdf_document:
+    keep_tex: yes
+  html_document: default
+---
+
+The purpose of this document is to describe the association between the decline in the  contains the R codes for the breast cancer study.
+
+```{r}
+## set the working directory
+
+Mywd <- setwd("/Users/arindambose/GitHub/brca-study")
+
+## Read the data into R
+
+mydata <- read.csv("breastca.csv", header = TRUE, sep = ",")
+mydata$hrtuse2 <- (mydata$declinehrtuse)^2
+```
+
+We regressed the decline in breast cancer incidence on the percentage decline in the usage of HRT in the countries studies. The 
+
+```{r}
+
+ plot(mydata$declinehrtuse, mydata$cadecrease,
+     main = "Decrease in Breast Cancer Incidence with HRT",
+    ylab = "Decrease in Breast Ca Incidence",
+    xlab = "decrease in HRT usage")
+
+abline(cahrt <- lm(mydata$cadecrease ~ mydata$declinehrtuse,  
+                  data = mydata))
+
+summary(cahrt)
+```
+
+As can be seen from the results, there is a small and statistically non-significant increment in the decline rates in breast cancer incidence (beta = 0.085, p = 0.45). In addition to this, we also get to see that for five countries, while HRT usage declined, this was not followed by corresponding decline in Breast cancer incidence in those countries. For these countries, there were increment in the incidence rates of breast cancer. 
+
+
+Next, we remove data where the decrease in breast cancer were < 0, that is where we noted that breast cancer incidence increased even while the rates of usage of HRT declined. 
+
+```{r, echo=FALSE}
+ mydata2 <- subset(mydata, cadecrease >= 0)
+```
+
+
+```{r, echo=FALSE} 
+plot(mydata2$declinehrtuse, mydata2$cadecrease,
+          main = "Decrease in Breast Cancer Incidence with HRT",
+         ylab = "Decrease in Breast Ca Incidence",
+         xlab = "decrease in HRT usage")
+ 
+ abline(carh2 <- lm(mydata2$cadecrease ~ mydata2$declinehrtuse, data = mydata2))
+ 
+ summary(carh2)
+
+summary(mydata2$cadecrease)
+```
+
+Selecting only those countries that showed decline in breast cancer incidence and HRT usage as well shows a sharper decline rate (beta = 0.17, p = 0.06). This was further tested by examining by creating a binary variable on the basis of the median of the rate of decline (median percentage for the rate of decline in breast cancer incidence was 6.3\%, and this was used to classify the countries with decline as high and low ). Alternatively, using the tertiles (33 rd percentiles, the countries with different decline rates were classified)
+
+```{r, echo=FALSE}
+mydata2$highredca <- mydata2$cadecrease > 6.3
+
+print(aggregate(declinehrtuse ~ highredca, mydata2, mean))
+```
+
+As can be seen, for countries that registered more than 6\% decline in the breast cancer incidence, the decline in HRT usage was 60.2 percent, nearly twice that of the countries with relatively smaller rate of decline in breast cancer incidence. 
+
+
+```{r, echo=FALSE}
+mydata2$caredcat <- (cut(mydata2$cadecrease, breaks = c(0, 3.7, 10, 21)))
+#mydata2$caredcat <- (mydata2$caredcat)
+#levels(mydata2$caredcat) = c("leq 0", "0.1-3.2", "3.3-8.6", "8.7-21")
+caredcatnames = c("small decrease", 
+                "moderate decrease", "large decrease")
+print(table(mydata2$caredcat))
+hrtcadeclevel <- tapply(mydata2$declinehrtuse, mydata2$caredcat, mean)
+print(hrtcadeclevel)
+```
+
+As can be seen, the decline in HRT usage was around 67\% for the country with over 10\% decline in breast cancer decline, while for countries where the decline in breast cancer was less than 4\%, there was a decline in HRT usage of around 24\%; together, these findings suggest that with progressive decline in HRT usage, there were corresponding decline in breast cancer incidence as well. This was examined in the plot below.
+
+```{r}
+barplot(hrtcadeclevel,
+        col = "black", main = "Bar Plot of % HRT Reduction",
+        xlab = "Extent of Decrease in Breast Cancer",
+        ylab = "Extent of Decrease in HRT Usage",
+       names.arg = caredcatnames,
+        ylim = c(0, 70))
+```
+
+

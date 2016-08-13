@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>AnnBrCaPaper</title>
+	<meta name="author" content="Arindam Bose"/>
+</head>
+<body>
+
+<p>Title: AnnBrCaPaper
+Author: Arindam Bose
+Base Header Level: 1</p>
+
+<h2 id="theworksofarpreliminaryanalyses">The Work so Far (Preliminary Analyses)</h2>
+
+<p>Data from the spreadsheet was abstracted and a new data table was created that contained the following information:</p>
+
+<ol>
+<li>The name of the country where the screening for breast cancer,</li>
+<li>The percentage reduction in the usage of HRT between peak use and the last reported use</li>
+<li>The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50&#8211;64+)</li>
+<li>The Age Range at which Screening for Breast Cancer using Mammograms begin. If the age range was 50&#8211;64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.</li>
+</ol>
+
+<p>In addition to this, data from the papers by Verkooijen et al
+\cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper</p>
+
+<ol>
+<li>The name of the country where the study was conducted</li>
+<li>The percentage of reduction from peak HRT usage till the date when it was reported</li>
+<li>The reduction in percentage in the corresponding breast cancer incidence as reported in the paper.</li>
+</ol>
+
+<p>These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins. </p>
+
+<h2 id="results">Results</h2>
+
+<p>Table 1 shows the data abstracted from the current dataset.</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Country</th>
+	<th style="text-align:left;">Reduction in HRT Usage (pct)</th>
+	<th style="text-align:left;">Reduction in Br Ca (percent)</th>
+	<th style="text-align:left;">Age Category of Screening</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Australia</td>
+	<td style="text-align:left;">43</td>
+	<td style="text-align:left;">6.7</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Canada</td>
+	<td style="text-align:left;">70</td>
+	<td style="text-align:left;">8</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Denmark</td>
+	<td style="text-align:left;">19</td>
+	<td style="text-align:left;">5.63</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">France</td>
+	<td style="text-align:left;">66</td>
+	<td style="text-align:left;">6.3</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Italy</td>
+	<td style="text-align:left;">42</td>
+	<td style="text-align:left;">6.18</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">United States</td>
+	<td style="text-align:left;">33</td>
+	<td style="text-align:left;">6.7</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Germany</td>
+	<td style="text-align:left;">50</td>
+	<td style="text-align:left;">8.8</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Belgium</td>
+	<td style="text-align:left;">60</td>
+	<td style="text-align:left;">9.5</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+</tbody>
+</table>
+<p><img src="ourdata.jpg" alt="Graph from our Data" />
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper</p>
+
+<p>Exhibit 1 shows the results of the regression model from the data abstracted for this analysis.
+<img src="ourfigure.png" alt="Regression Output" /></p>
+
+<h2 id="comparisonwithtwootherstudieszbukandanandandverkooijenetal">Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)</h2>
+
+<p>For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen. </p>
+
+<p>Figure 2. Data from the paper by Zbuk
+<img src="zbuk.jpg" alt="Table from Zbuk Paper" /></p>
+
+<p>Figure 3 presents the results of data analyses and regression model constructed from the zbuk data.
+<img src="zbukgraph.jpg" alt="Graph from the Zbuk Study" /></p>
+
+<p>Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper
+<img src="zbukoutput.png" alt="Regression Table from Zbuk Paper" /></p>
+
+<p>Figure 5 presents the tables from Verkooijen study
+<img src="verkooijen.jpg" alt="Table from Verkooijen Study" /></p>
+
+<p>Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study
+<img src="verkgraph.jpg" alt="Graph from Verkooijen Study" /></p>
+
+<p>Figure 7 presents the figure of the regression table from Verkooijen study
+<img src="verkoutput.png" alt="Regression Table from Verkooijen Study" /></p>
+
+<h2 id="theworksofarpreliminaryanalyses">The Work so Far (Preliminary Analyses)</h2>
+
+<p>Data from the spreadsheet was abstracted and a new data table was created that contained the following information:</p>
+
+<ol>
+<li>The name of the country where the screening for breast cancer,</li>
+<li>The percentage reduction in the usage of HRT between peak use and the last reported use</li>
+<li>The percentage reduction in the reported incidence for the corresponding years for the relevant age groups (50&#8211;64+)</li>
+<li>The Age Range at which Screening for Breast Cancer using Mammograms begin. If the age range was 50&#8211;64 years, it was given a code of 1, else if the age at which mammogram began was earlier (that is for younger age), the Age range variable was assigned a code of 2.</li>
+</ol>
+
+<p>In addition to this, data from the papers by Verkooijen et al
+\cite{Verkooijen 2009} and Zbuk et al \cite{Zbuk 2012} were extracted. For each of these data, the following information were abstracted from each paper</p>
+
+<ol>
+<li>The name of the country where the study was conducted</li>
+<li>The percentage of reduction from peak HRT usage till the date when it was reported</li>
+<li>The reduction in percentage in the corresponding breast cancer incidence as reported in the paper.</li>
+</ol>
+
+<p>These were presented in a corresponding table abstracted from the papers (see Figures 1 and 2). For each of the three data, a linear regression model was run to study the extent to which reduction in the HRT usage might explain the reduction in the incidence of Breast Cancer. For the current dataset, in addition, the relationship between the reduction in Breast Cancer and the HRT usage was further adjusted for by including the age at which screening begins. </p>
+
+<h2 id="results">Results</h2>
+
+<p>Table 1 shows the data abstracted from the current dataset.</p>
+
+<table>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">Country</th>
+	<th style="text-align:left;">Reduction in HRT Usage (pct)</th>
+	<th style="text-align:left;">Reduction in Br Ca (percent)</th>
+	<th style="text-align:left;">Age Category of Screening</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">Australia</td>
+	<td style="text-align:left;">43</td>
+	<td style="text-align:left;">6.7</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Canada</td>
+	<td style="text-align:left;">70</td>
+	<td style="text-align:left;">8</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Denmark</td>
+	<td style="text-align:left;">19</td>
+	<td style="text-align:left;">5.63</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">France</td>
+	<td style="text-align:left;">66</td>
+	<td style="text-align:left;">6.3</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Italy</td>
+	<td style="text-align:left;">42</td>
+	<td style="text-align:left;">6.18</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+<tr>
+	<td style="text-align:left;">United States</td>
+	<td style="text-align:left;">33</td>
+	<td style="text-align:left;">6.7</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Germany</td>
+	<td style="text-align:left;">50</td>
+	<td style="text-align:left;">8.8</td>
+	<td style="text-align:left;">40&#8211;75</td>
+</tr>
+<tr>
+	<td style="text-align:left;">Belgium</td>
+	<td style="text-align:left;">60</td>
+	<td style="text-align:left;">9.5</td>
+	<td style="text-align:left;">50&#8211;69</td>
+</tr>
+</tbody>
+</table>
+<p><img src="ourdata.jpg" alt="Graph from our Data" />
+Figure 1 shows the graph from the regression model of the relationship between reduction in HRT usage and reduction in breast cancer incidence from the studies included in this paper</p>
+
+<p>Exhibit 1 shows the results of the regression model from the data abstracted for this analysis.
+<img src="ourfigure.png" alt="Regression Output" /></p>
+
+<h2 id="comparisonwithtwootherstudieszbukandanandandverkooijenetal">Comparison with Two Other Studies (Zbuk and Anand and Verkooijen et al)</h2>
+
+<p>For comparison, we present two other datasets and two other analyses, one from the paper by Zbuk and Anand and the other by a paper by Verkooijen. </p>
+
+<p>Figure 2. Data from the paper by Zbuk
+<img src="zbuk.jpg" alt="Table from Zbuk Paper" /></p>
+
+<p>Figure 3 presents the results of data analyses and regression model constructed from the zbuk data.
+<img src="zbukgraph.jpg" alt="Graph from the Zbuk Study" /></p>
+
+<p>Figure 4 presents the regression outputs from the Zbuk data abstracted from the paper
+<img src="zbukoutput.png" alt="Regression Table from Zbuk Paper" /></p>
+
+<p>Figure 5 presents the tables from Verkooijen study
+<img src="verkooijen.jpg" alt="Table from Verkooijen Study" /></p>
+
+<p>Figure 6 presents the figure of the data analyses from regression model constructed from Verkooijen study
+<img src="verkgraph.jpg" alt="Graph from Verkooijen Study" /></p>
+
+<p>Figure 7 presents the figure of the regression table from Verkooijen study
+<img src="verkoutput.png" alt="Regression Table from Verkooijen Study" /></p>
+
+</body>
+</html>

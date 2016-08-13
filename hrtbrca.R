@@ -1,0 +1,92 @@
+This set of analyses contains the R codes for the breast cancer study.
+
+<<Setwd >>=
+## Here is the working directory
+
+Mywd <- setwd("/Users/arindambose/GitHub/brca-study")
+
+## Read the data into R
+
+mydata <- read.csv("breastca.csv", header = TRUE, sep = ",")
+mydata$hrtuse2 <- (mydata$declinehrtuse)^2
+@
+
+#print(names(mydata))
+# print(summary(mydata))
+####
+quadmodel <- lm(mydata$cadecrease ~ mydata$declinehrtuse + 
+                 mydata$hrtuse2, data = mydata)
+predquad <- predict(quadmodel, list(hrt = mydata$declinehrtuse, 
+                                   hrt2 = mydata$hrtuse2))
+
+
+# plot(mydata$declinehrtuse, mydata$cadecrease,
+#     main = "Decrease in Breast Cancer Incidence with HRT",
+#     ylab = "Decrease in Breast Ca Incidence",
+#     xlab = "decrease in HRT usage")
+
+# abline(lm(mydata$cadecrease ~ mydata$declinehrtuse,  
+ #                  data = mydata))
+
+## You can use predict and lines() to create a quadratic plot
+ ## first set up the quadratic terms
+mydata$dechrtuse2 = mydata$declinehrtuse * mydata$declinehrtuse
+# then we set up the model
+# mydata1 <- mydata[,!is.na(mydata)]
+#quadmodel <- lm(cadecrease ~ declinehrtuse + dechrtuse2, data = mydata)
+#lines(mydata$declinehrtuse, predict(quadmodel))
+
+###
+
+## We remove data where the decrease in breast cancer were < 0
+
+ mydata2 <- subset(mydata, cadecrease >= 0)
+
+# print(summarize(mydata2))
+ 
+# plot(mydata2$declinehrtuse, mydata2$cadecrease,
+#          main = "Decrease in Breast Cancer Incidence with HRT",
+#          ylab = "Decrease in Breast Ca Incidence",
+#          xlab = "decrease in HRT usage")
+ 
+# abline(lm(mydata2$cadecrease ~ mydata2$declinehrtuse, data = mydata2))
+
+print(summary(mydata2$cadecrease))
+
+# mydata2$highredca <- mydata2$cadecrease > 6.3
+
+# print(aggregate(declinehrtuse ~ highredca, mydata2, mean))
+
+mydata2$caredcat <- (cut(mydata2$cadecrease, breaks = c(0, 3.7, 10, 21)))
+#mydata2$caredcat <- (mydata2$caredcat)
+#levels(mydata2$caredcat) = c("leq 0", "0.1-3.2", "3.3-8.6", "8.7-21")
+caredcatnames = c("small decrease", 
+                "moderate decrease", "large decrease")
+print(table(mydata2$caredcat))
+hrtcadeclevel <- tapply(mydata2$declinehrtuse, mydata2$caredcat, mean)
+print(hrtcadeclevel)
+
+# barplot(hrtcadeclevel,
+#        col = "black", main = "Bar Plot of % HRT Reduction",
+#        xlab = "Extent of Decrease in Breast Cancer",
+#        ylab = "Extent of Decrease in HRT Usage",
+#        names.arg = caredcatnames,
+#        ylim = c(0, 70))
+
+## Now, analyse the the extent to reduction in HRT usage
+##print(summary(mydata2$declinehrtuse))
+## given the minimum 8, q1 21.8, q3 65.5, highest 75
+mydata2$hrtdeclinecat <- cut(mydata2$declinehrtuse,
+                            breaks = c(8, 30, 65.6, 75))
+print(table(mydata2$hrtdeclinecat))
+cadeclevel <- tapply(mydata2$cadecrease, mydata2$hrtdeclinecat, mean)
+print(cadeclevel)
+
+boxplot(mydata2$cadecrease ~ mydata2$hrtdeclinecat)
+
+#barplot(cadeclevel,
+ #       col = "black", main = "Bar Plot of Breast Ca Reduction",
+  #      ylab = "Extent of Decrease in Breast Cancer",
+  #      xlab = "Extent of Decrease in HRT Usage",
+  #      names.arg = caredcatnames, srt = 45,
+  #      ylim = c(0, 20))

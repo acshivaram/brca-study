@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2014-10-18 13:44:49 +1300">
+<ScrivenerProject Version="1.0" Creator="SCRMAC-2.6-25480" Modified="2015-05-24 20:43:23 +1200">
     <Binder>
         <BinderItem ID="0" Type="DraftFolder" Created="2014-09-26 19:53:49 +1200" Modified="2014-09-26 19:53:49 +1200">
             <Title>Draft</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
+            <CorkboardAndOutliner>
+                <SelectedSubdocumentIDs>21</SelectedSubdocumentIDs>
+            </CorkboardAndOutliner>
             <Children>
                 <BinderItem ID="3" Type="Text" Created="2014-09-26 19:53:49 +1200" Modified="2014-10-01 12:56:12 +1300">
                     <Title>First Section</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
                         <TextSelection>1456,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem ID="19" Type="Text" Created="2015-05-24 19:28:35 +1200" Modified="2015-05-24 19:32:38 +1200">
+                    <Title>AnnBrCaPaper</Title>
+                    <MetaData>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>4036,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
                 <BinderItem ID="4" Type="Text" Created="2014-09-26 19:54:36 +1200" Modified="2014-09-26 19:55:28 +1200">
                     <Title>Introduction</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
@@ -30,7 +40,6 @@
                 <BinderItem ID="5" Type="Text" Created="2014-09-26 19:55:10 +1200" Modified="2014-09-26 19:55:43 +1200">
                     <Title>Methods</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
@@ -40,7 +49,6 @@
                 <BinderItem ID="7" Type="Text" Created="2014-10-01 11:52:24 +1300" Modified="2014-10-01 11:58:25 +1300">
                     <Title>Tables</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
@@ -50,7 +58,6 @@
                 <BinderItem ID="8" Type="Text" Created="2014-10-01 11:58:35 +1300" Modified="2014-10-01 12:13:38 +1300">
                     <Title>Tables</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
@@ -60,11 +67,29 @@
                 <BinderItem ID="14" Type="Text" Created="2014-10-16 14:04:22 +1300" Modified="2014-10-18 13:11:14 +1300">
                     <Title>This is a very good font to work with the helvetica</Title>
                     <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
                         <TextSelection>78,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="15" Type="Text" Created="2015-05-24 17:09:42 +1200" Modified="2015-05-24 19:27:55 +1200">
+                    <Title>A Report on the Breast Cancer Study</Title>
+                    <MetaData>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>2208,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="21" Type="Text" Created="2015-05-24 19:33:16 +1200" Modified="2015-05-24 19:34:42 +1200">
+                    <Title>AnnBrCaPaper1 (APA 6)</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>844,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -75,7 +100,7 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <CorkboardAndOutliner>
-                <SelectedSubdocumentIDs>6</SelectedSubdocumentIDs>
+                <SelectedSubdocumentIDs>16</SelectedSubdocumentIDs>
             </CorkboardAndOutliner>
             <Children>
                 <BinderItem ID="6" Type="Text" Created="2014-08-30 13:07:58 +1200" Modified="2014-10-15 18:28:40 +1300">
@@ -85,7 +110,7 @@
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>364,2934</TextSelection>
+                        <TextSelection>991,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem ID="9" Type="Other" Created="2014-09-26 20:01:36 +1200" Modified="2014-10-01 11:07:38 +1300">
@@ -123,6 +148,52 @@
                     <TextSettings>
                         <TextSelection>269,0</TextSelection>
                     </TextSettings>
+                </BinderItem>
+                <BinderItem ID="16" Type="Text" Created="2015-05-24 18:04:41 +1200" Modified="2015-05-24 18:10:54 +1200">
+                    <Title>3 Snapshot (2015-05-23 23-15-05 +1200)</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>6187,1</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem ID="17" Type="Image" Created="2015-05-24 18:06:29 +1200" Modified="2015-05-24 18:06:29 +1200">
+                    <Title>Embedded image</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>tiff</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="18" Type="Image" Created="2015-05-24 18:11:06 +1200" Modified="2015-05-24 18:11:06 +1200">
+                    <Title>Embedded image</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>tiff</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem ID="20" Type="WebArchive" Created="2015-05-24 19:29:36 +1200" Modified="2015-05-24 19:29:36 +1200">
+                    <Title>AnnBrCaPaper</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>webarchive</FileExtension>
+                        <NotesTextSelection>0,0</NotesTextSelection>
+                    </MetaData>
                 </BinderItem>
             </Children>
         </BinderItem>
@@ -177,7 +248,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2014-09-26 19:53:37 +1200" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="14" Characters="78" Date="2014-10-18 11:00:29 +1300"></PreviousSession>
+        <PreviousSession Words="533" Characters="3905" Date="2015-05-24 18:03:11 +1200"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
